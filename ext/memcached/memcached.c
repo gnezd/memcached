@@ -553,4 +553,5 @@ void Init_memcached(void)
 	id_socket = rb_intern("socket");
 
 	Init_memcached_behavior();
+	rb_undef_alloc_func(rb_cConnection);
 }
